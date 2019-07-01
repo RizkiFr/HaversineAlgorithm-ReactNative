@@ -193,7 +193,7 @@ export default class Home extends React.Component{
                                 /> :
                             <AdMobBanner
                                 bannerSize="largeBanner"
-                                adUnitID="ca-app-pub-8483778260495457/5563901536"
+                                adUnitID="YOUR_ADMOB_ID"
                                 testDeviceID="EMULATOR"
                                 onDidFailToReceiveAdWithError={()=>this.setState({ad: !this.state.ad})} />
                         }

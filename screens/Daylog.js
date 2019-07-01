@@ -86,7 +86,7 @@ export default class Daylog extends React.Component{
         }
 
         let location = await Location.getCurrentPositionAsync({});
-        await Geocoder.init('AIzaSyDnFUDBjOXTwNozJGBOliMyT-ge8oRo2E0');
+        await Geocoder.init('YOUR_API_KEY');
         await Geocoder.from(location.coords.latitude, location.coords.longitude)
               .then(res => {
                   const addressComponent = res.results[0].formatted_address;
